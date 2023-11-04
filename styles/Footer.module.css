@@ -1,0 +1,20 @@
+
+
+.footer {
+    background-color: var(--black);
+    padding: 5rem 0;
+    /* Otra forma de poner el footer hasta abajo sin jugar con flexbox en el body #__next en este caso */
+    margin-top: auto;
+}
+.contenido {
+    text-align: center;   
+}
+@media (min-width: 768px) {
+    .contenido {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.contenido p {
+    color: var(--white);
+}

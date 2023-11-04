@@ -1,0 +1,64 @@
+.grid {
+    display: grid;
+    gap: 5rem;
+}
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: 3fr 2fr;
+    }
+}
+.carrito {
+    padding: 3rem 0;
+}
+.resumen {
+    background-color: #f9fafb;
+    padding: 3rem;
+    border-radius: 1rem;
+    height: 20rem;
+    position: sticky;
+    top: 3rem;
+}
+.resumen h3 {
+    text-align: center;
+}
+.producto {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 3fr;
+    gap: 4rem;
+    align-items: center;
+    padding: 3rem 0;
+    border-bottom: 1px solid #cfcfcf;
+}
+/*  */
+.producto p {
+    margin: 0 0 1rem 0;
+}
+.producto:last-child {
+    border-bottom: 0px solid;
+}
+.nombre {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 4.2rem;
+}
+.precio {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--primary);
+}
+.cantidad span, .subtotal span {
+    font-weight: 700;
+    font-size: 3.2rem;
+}
+.form {
+    margin-top: 0;
+}
+.producto button {
+    all: unset;
+    position: absolute;
+    cursor: pointer;
+    margin-top: 1rem;
+    top: 0;
+    right: 0;
+}

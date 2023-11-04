@@ -1,0 +1,66 @@
+:root {
+  --primary: #e99401;
+  --black: #262626;
+  --white: #FFF;
+  /* --fuente-principal: 'Outfit', sans-serif; */
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 2rem;
+  /* font-family: var(--fuente-principal); */
+  line-height: 1.5;
+  /* This styles are for making the footer go all the way down */
+  
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+[class*="contenedor"], 
+main {
+  width: min(95%, 120rem);
+  margin: 3rem auto;
+}
+[class*="heading"] {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 900;
+  color: var(--primary);
+  margin: 5rem 0;
+}
+#__next {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column
+}
+.error,
+.error-enlace {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+.error-enlace {
+  all: unset;
+  text-align: center;
+  font-size: 1.8rem;
+  display: block;
+  text-decoration: none;
+  color: var(--primary);
+  margin: 0 auto;
+  transition: font-size 300ms ease;
+}
+.error-enlace:focus {
+  outline: orange auto 5px
+}
+.error-enlace:hover {
+  cursor: pointer;
+  font-size: 2.4rem;
+}
